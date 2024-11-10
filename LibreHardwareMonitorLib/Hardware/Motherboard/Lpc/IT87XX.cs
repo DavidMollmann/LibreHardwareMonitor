@@ -98,8 +98,7 @@ internal class IT87XX : ISuperIO
             Chip.IT8613E or
             Chip.IT8792E or
             Chip.IT8655E or
-            Chip.IT8631E or
-            Chip.IT8696E;
+            Chip.IT8631E;
 
         switch (chip)
         {
@@ -164,13 +163,6 @@ internal class IT87XX : ISuperIO
                 Temperatures = new float?[3];
                 Fans = new float?[3];
                 Controls = new float?[3];
-                break;
-
-            case Chip.IT8696E:
-                Voltages = new float?[10];
-                Temperatures = new float?[6];
-                Fans = new float?[6];
-                Controls = new float?[6];
                 break;
 
             case Chip.IT8655E:
